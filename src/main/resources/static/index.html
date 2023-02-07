@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Chat room</title>
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/style.css" />
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/webjars/sockjs-client/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/stomp.min.js"></script>
+<script src="/script.js"></script>
+</head>
+<body class="bg-dark text-dark tempuif">
+	
+	<div id="name-from" class="tempui d-flex align-items-center">
+		<div class="container-fluid">
+			<div class="title text-center ">
+				<h1>Chatroom &#x1F525</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="input-group">
+						<input type="text" placeholder="Enter your name" id="name-value"
+							class="form-control" autofocus>
+						<div class="input-group-append">
+							<button class="btn btn-dark" id="login">Enter</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="chat-room" class="d-none">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6 offset-md-3">
+					<div class="card mt-5">
+						<div class="card-header">
+							<div id="name-title"></div>
+						</div>
+						<div class="card-body">
+
+							<div class="input-group">
+								<input type="text" placeholder="Enter your message"
+									id="message-value" class="form-control" autofocus>
+								<div class="input-group-append">
+									<button class="btn btn-dark" id="send">Send</button>
+									<button class="btn btn-dark" id="logout">Logout</button>
+								</div>
+							</div>
+							<div class="table-responsive">
+
+								<table id="message-conatiner-table">
+
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>

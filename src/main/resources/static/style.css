@@ -1,0 +1,23 @@
+#name-from {
+	height: 100vh;
+}
+
+.tempui {
+	max-width: 100%; height : auto;
+	background: url(/img/tempuif.png) ;
+	height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+	color: white;
+	
+}
+
+.tempuif {
+	max-width: 100%; height : auto;
+	background: url(/img/tempuif.png) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
